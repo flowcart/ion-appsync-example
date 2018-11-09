@@ -6,7 +6,7 @@ if [ $# -ne 4 ]
   else
     set -x
 
-    aws --region $3 cloudformation create-stack --stack-name $1 --template-body file://../templates/appsync-simple.yml\
+    aws --region $3 cloudformation create-stack --stack-name $1 --template-body file://templates/appsync-simple.yml\
         --capabilities CAPABILITY_NAMED_IAM\
         --parameters\
         ParameterKey=APIName,ParameterValue=$2 \
