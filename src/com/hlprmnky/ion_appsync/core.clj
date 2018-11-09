@@ -16,10 +16,10 @@
 interface when run on a Datomic compute node. If you want to call
 locally, fill in the correct values in the map."
   (memoize #(d/client {:server-type :ion
-                       :region "us-east-2"                                                       ;; THESE NEED TO HAVE
-                       :system "datomic-cloud-appsync"                                           ;; CORRECT VALUES
-                       :query-group "datomic-cloud-appsync"                                      ;; FOR YOUR SPECIFIC
-                       :endpoint "http://entry.datomic-cloud-appsync.us-east-2.datomic.net:8182" ;; DATOMIC CLOUD INSTANCE
+                       :region "eu-west-1"                                                       ;; THESE NEED TO HAVE
+                       :system "datomic1"                                           ;; CORRECT VALUES
+                       :query-group "datomic1"                                      ;; FOR YOUR SPECIFIC
+                       :endpoint "http://entry.datomic1.eu-west-1.datomic.net:8182" ;; DATOMIC CLOUD INSTANCE
                        :proxy-port 8182})))
 
 (defn items-by-type-json
