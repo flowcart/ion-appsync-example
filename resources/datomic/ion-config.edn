@@ -14,4 +14,4 @@
            :add-item-return-item
            {:fn com.hlprmnky.ion-appsync.core/add-item-return-item
             :description "adds and item and returns that item rather than the basis-t for use in subscriptions"}}
- :app-name "datomic-cloud-appsync"}
+ :app-name "datomic1"}

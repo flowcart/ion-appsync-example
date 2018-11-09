@@ -7,8 +7,8 @@
         org.clojure/data.json {:mvn/version "0.2.6"}
         org.clojure/clojure {:mvn/version "1.9.0"}
         ;; We borrow the core items-by-type* and featured? ions from the ion-starter project
-        datomic.ion/starter {:git/url "https://github.com/Datomic/ion-starter.git"
-                             :sha "ce6503ab40a62c68594c83d88c7f76e2dec9cf08"}}
+        datomic.ion/starter {:git/url "https://github.com/flowcart/ion-starter.git"
+                             :sha "e2eb209e25bbd8798bf19991ffab93a989cda8c6"}}
  :mvn/repos {"datomic-cloud" {:url "s3://datomic-releases-1fc2183a/maven/releases"}}
  :aliases
  {:dev {:extra-deps {com.datomic/ion-dev {:mvn/version "0.9.160"}
