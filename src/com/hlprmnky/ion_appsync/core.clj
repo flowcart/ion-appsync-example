@@ -26,7 +26,7 @@ locally, fill in the correct values in the map."
   "items-by-type starter ion modified to emit JSON for consumption by the AWS service ecosystem"
   [{:keys [input]}]
   (let [type (keyword (get (json/read-str input) "type"))
-        conn (d/connect (get-client) {:db-name "datomic1-Compute-12NEG59OK1APT"})]
+        conn (d/connect (get-client) {:db-name "datomic1"})]
     ;; NOTE that conn can - and should be - parameterized in production builds.
     ;; See the ion-starter repo and get-connection for a more production-ready approach with Datomic schema validation, etc.
     (->> (ion/items-by-type* (d/db conn) type)
@@ -36,7 +36,7 @@ locally, fill in the correct values in the map."
   "GraphQL Datasource data-shape massager for items-by-type ion"
   [{:keys [input]}]
   (let [type (keyword (get (json/read-str input) "type"))
-        conn (d/connect (get-client) {:db-name "datomic1-Compute-12NEG59OK1APT"})]
+        conn (d/connect (get-client) {:db-name "datomic1"})]
     ;; NOTE that conn can - and should be - parameterized in production builds.
     ;; See the ion-starter repo and get-connection for a more production-ready approach with Datomic schema validation, etc.
     (try
